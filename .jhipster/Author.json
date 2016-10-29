@@ -1,0 +1,26 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "book",
+            "otherEntityName": "book",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "author"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "birthDate",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20161029195118",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "author",
+    "pagination": "pager"
+}

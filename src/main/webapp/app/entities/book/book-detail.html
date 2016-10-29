@@ -1,0 +1,39 @@
+
+<div>
+    <h2><span data-translate="jhipsterApp.book.detail.title">Book</span> {{vm.book.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="jhipsterApp.book.title">Title</span></dt>
+        <dd>
+            <span>{{vm.book.title}}</span>
+        </dd>
+        <dt><span data-translate="jhipsterApp.book.description">Description</span></dt>
+        <dd>
+            <span>{{vm.book.description}}</span>
+        </dd>
+        <dt><span data-translate="jhipsterApp.book.publicationDate">Publication Date</span></dt>
+        <dd>
+            <span>{{vm.book.publicationDate | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span data-translate="jhipsterApp.book.price">Price</span></dt>
+        <dd>
+            <span>{{vm.book.price}}</span>
+        </dd>
+        <dt><span data-translate="jhipsterApp.book.author">Author</span></dt>
+        <dd>
+            <a ui-sref="author-detail({id:vm.book.author.id})">{{vm.book.author.name}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="book-detail.edit({id:vm.book.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

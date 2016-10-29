@@ -37,5 +37,17 @@
            timeToLiveSeconds="3600">
     </cache>
     
+    <cache name="col.sm.domain.Author"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="col.sm.domain.Author.books"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="col.sm.domain.Book"
+        timeToLiveSeconds="3600">
+    </cache>
+
     <!-- jhipster-needle-ehcache-add-entry -->
 </ehcache>
