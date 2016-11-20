@@ -5,8 +5,6 @@ services:
 language: java
 node_js:
   - "4.5.0"
-jdk:
-  - oraclejdk8
 sudo: false
 cache:
   directories:
