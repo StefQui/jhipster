@@ -88,6 +88,13 @@ Then run:
 
 For more information refer to [Using Docker and Docker-Compose][], this page also contains information on the docker-compose sub-generator (`yo jhipster:docker-compose`), which is able to generate docker configurations for one or several JHipster applications.
 
+## Stef
+
+    ./mvnw -Pprod clean package
+
+    scp -P 1212 target/jhipster-0.0.1-SNAPSHOT.war.original smarttle@mon02b:/home/smarttle/docker/jetty/webapps/jhipster.war
+jhipster-0.0.1-SNAPSHOT.war.original
+
 ## Continuous Integration (optional)
 
 To set up a CI environment, consult the [Setting up Continuous Integration][] page.

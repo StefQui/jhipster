@@ -19,7 +19,7 @@ spring:
             enabled: false
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:mysql://localhost:3306/jhipster?useUnicode=true&characterEncoding=utf8&useSSL=false
+        url: jdbc:mysql://172.17.0.5:3306/jhipster?useUnicode=true&characterEncoding=utf8&useSSL=false
         name:
         username: root
         password:

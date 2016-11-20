@@ -1,7 +1,7 @@
 {
     "home": {
-        "title": "Welcome to stef's site!",
-        "subtitle": "This is your homepage",
+        "title": "Welcome to SMARTTLE's site!",
+        "subtitle": "Bilan carbone",
         "logged": {
             "message": "You are logged in as user \"{{username}}\"."
         },
