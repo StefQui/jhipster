@@ -28,7 +28,6 @@ install: npm install
 script:
   - ./mvnw clean
   - ./mvnw test
-  - gulp test
   - ./mvnw package -Pprod -DskipTests
 notifications:
   webhooks:
